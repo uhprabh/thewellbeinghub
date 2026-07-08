@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library — The Wellbeing Hub</title>
+  <meta name="description" content="Free, editable wellbeing worksheets and activities for young people, organised by theme.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">W</span>
+        <span class="logo-text">The Wellbeing Hub</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html" aria-current="page">Library</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero" style="padding:56px 0 40px;">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">All free · All editable</span>
+        <h1>The Library</h1>
+        <p class="lead">
+          Every resource here is free to preview, download and adapt. Each one comes
+          with a short note on how to use it, so you can make it work for the young
+          person in front of you.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:20px;" aria-labelledby="lib-title">
+      <div class="container">
+        <h2 id="lib-title" class="sr-only" style="position:absolute; left:-9999px;">Browse resources</h2>
+
+        <div class="search-bar">
+          <input type="search" id="search-input" placeholder="Search resources… e.g. anger, worry, confidence" aria-label="Search resources">
+        </div>
+
+        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+
+        <div class="resource-grid" id="resource-grid"></div>
+        <p class="no-results" id="no-results">
+          Nothing matches that search just yet — try a different word, or
+          <a href="contact.html">request a resource</a> and it may be added!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>The Wellbeing Hub</h4>
+          <p>Free wellbeing resources and activities created from a youth advocate's
+            professional standpoint. These materials are supportive tools, not medical
+            or therapeutic advice, and may not suit everyone.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Need help now?</h4>
+          <ul>
+            <li>Emergency <strong>999</strong></li>
+            <li>Childline <strong>0800 1111</strong></li>
+            <li>Samaritans <strong>116 123</strong></li>
+            <li>Text SHOUT to <strong>85258</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The Wellbeing Hub · Made with care for young people and those who support them.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/resources.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

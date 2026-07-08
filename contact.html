@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get in touch — The Wellbeing Hub</title>
+  <meta name="description" content="Ask a question, share feedback or suggest a resource for The Wellbeing Hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">W</span>
+        <span class="logo-text">The Wellbeing Hub</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero" style="padding:56px 0 36px;">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">Questions · Feedback · Requests</span>
+        <h1>Get in touch</h1>
+        <p class="lead">
+          Have a question, some feedback, or an idea for a resource you'd love to see
+          in the library? Pop it in the form below.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:16px;" aria-labelledby="form-title">
+      <div class="container" style="max-width:680px;">
+        <div class="notice reveal" style="margin-bottom:18px;">
+          <strong>A little note on what I can help with</strong>
+          This form is for questions, feedback and resource suggestions only.
+          I'm able to answer questions about the hub and its resources — but I can't
+          take referrals or provide direct support through this website.
+        </div>
+        <div class="notice notice-crisis reveal" style="margin-bottom:30px;">
+          <strong>If you need help right now</strong>
+          Please don't use this form in an emergency. If you or someone else is in
+          immediate danger, call <strong>999</strong>. You can also call Childline free on
+          <strong>0800 1111</strong>, Samaritans on <strong>116 123</strong>, or text
+          <strong>SHOUT</strong> to <strong>85258</strong> — all free, day and night.
+        </div>
+
+        <h2 id="form-title" style="text-align:center; margin-bottom:22px;">Send a message 💌</h2>
+        <form class="form-grid sticker reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none;"><label>Don't fill this in: <input name="bot-field"></label></p>
+          <div>
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div>
+            <label for="f-email">Your email</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="f-role">I am a…</label>
+            <select id="f-role" name="role">
+              <option>Young person</option>
+              <option>Youth advocate</option>
+              <option>Parent or carer</option>
+              <option>Teacher or school staff</option>
+              <option>Other professional</option>
+              <option>Just curious!</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-topic">What's it about?</label>
+            <select id="f-topic" name="topic">
+              <option>Resource request or suggestion</option>
+              <option>General question</option>
+              <option>Feedback about the website</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-message">Your message</label>
+            <textarea id="f-message" name="message" required placeholder="Tell me what's on your mind…"></textarea>
+          </div>
+          <button class="btn btn-honey" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="faq-title">Possible questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Are the resources really free?</summary>
+            <p>Yes — everything in the library is completely free to preview, download,
+              edit and use with the young people you support.</p>
+          </details>
+          <details>
+            <summary>Can I edit the resources for a specific young person?</summary>
+            <p>Please do! That's exactly what they're for. Resources are provided in
+              editable formats wherever possible so you can adapt them to each young
+              person's needs.</p>
+          </details>
+          <details>
+            <summary>Who makes these resources?</summary>
+            <p>I do — a youth advocate, drawing on personal experience of real one-to-one
+              wellbeing work with young people. They are supportive tools, not medical
+              or therapeutic advice.</p>
+          </details>
+          <details>
+            <summary>Can I request a resource on a specific topic?</summary>
+            <p>Absolutely — that's one of the main reasons this form exists. Send your
+              idea over and it may appear in the library's "recently added" section.</p>
+          </details>
+          <details>
+            <summary>Do the games save or track anything?</summary>
+            <p>No. The games are just for fun in the moment — nothing you tap, type or
+              choose is saved, stored or sent anywhere.</p>
+          </details>
+          <details>
+            <summary>Can I make a referral through this website?</summary>
+            <p>No — this website can't accept referrals or provide direct support. If a
+              young person needs help, please contact their school, GP, or the support
+              services listed on the <a href="about.html">About page</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>The Wellbeing Hub</h4>
+          <p>Free wellbeing resources and activities created from a youth advocate's
+            professional standpoint. These materials are supportive tools, not medical
+            or therapeutic advice, and may not suit everyone.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Need help now?</h4>
+          <ul>
+            <li>Emergency <strong>999</strong></li>
+            <li>Childline <strong>0800 1111</strong></li>
+            <li>Samaritans <strong>116 123</strong></li>
+            <li>Text SHOUT to <strong>85258</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The Wellbeing Hub · Made with care for young people and those who support them.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

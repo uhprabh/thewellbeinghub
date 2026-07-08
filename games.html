@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — The Wellbeing Hub</title>
+  <meta name="description" content="Fun, calming, in-the-moment wellbeing games for young people. Nothing is saved or tracked.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">W</span>
+        <span class="logo-text">The Wellbeing Hub</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="games.html" aria-current="page">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero" style="padding:56px 0 40px;">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">Just for fun · Nothing is saved</span>
+        <h1>The Games Corner</h1>
+        <p class="lead">
+          Little activities for when you're bored, wobbly, or just fancy a moment to
+          yourself. Play them alone or with your youth advocate — nothing here is
+          recorded, tracked or scored.
+        </p>
+      </div>
+    </header>
+
+    <!-- MOOD CHECK-IN -->
+    <section class="section" style="padding-top:24px;" aria-labelledby="g-mood">
+      <div class="container">
+        <div class="sticker tilt-l game-card reveal">
+          <span class="big-emoji" aria-hidden="true">🌈</span>
+          <h2 id="g-mood" class="script">How are you doing?</h2>
+          <p style="color:var(--ink-soft);">Tap the face that feels most like you. You'll get a little something back.</p>
+          <div class="mood-row" role="group" aria-label="Choose how you are feeling">
+            <button class="mood-btn" data-mood="great" aria-label="I feel great">😄</button>
+            <button class="mood-btn" data-mood="good" aria-label="I feel good">🙂</button>
+            <button class="mood-btn" data-mood="okay" aria-label="I feel okay">😐</button>
+            <button class="mood-btn" data-mood="low" aria-label="I feel a bit low">😔</button>
+            <button class="mood-btn" data-mood="tough" aria-label="I'm having a tough time">😢</button>
+          </div>
+          <div class="mood-response" id="mood-response" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BREATHING + AFFIRMATIONS -->
+    <section class="section section-alt" aria-label="Calming games">
+      <div class="container grid-2">
+        <div class="sticker game-card reveal">
+          <span class="big-emoji" aria-hidden="true">🌬️</span>
+          <h2 class="script">The Breathing Bubble</h2>
+          <p style="color:var(--ink-soft);">Follow the bubble: breathe in as it grows, hold, then breathe out slowly as it shrinks.</p>
+          <div class="breath-stage">
+            <div class="breath-bubble" id="breath-bubble"><span id="breath-label">Ready?</span></div>
+          </div>
+          <button class="btn btn-lavender" id="breath-toggle">Start breathing</button>
+        </div>
+
+        <div class="sticker tilt-r game-card reveal">
+          <span class="big-emoji" aria-hidden="true">⭐</span>
+          <h2 class="script">Kind Words Generator</h2>
+          <p style="color:var(--ink-soft);">Sometimes we all need a reminder. Tap the button and take one.</p>
+          <div class="game-area">
+            <div class="reveal-box" id="affirmation-box" role="status" aria-live="polite">Tap below for a kind word 💛</div>
+          </div>
+          <button class="btn btn-honey" id="affirmation-btn" style="margin-top:16px;">Give me a kind word</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMPTS + SCRAMBLE -->
+    <section class="section" aria-label="Creative games">
+      <div class="container grid-2">
+        <div class="sticker tilt-l game-card reveal">
+          <span class="big-emoji" aria-hidden="true">✏️</span>
+          <h2 class="script">Journal Prompt Spinner</h2>
+          <p style="color:var(--ink-soft);">Grab any paper (or just think it through) and spin for a question worth wondering about.</p>
+          <div class="game-area">
+            <div class="reveal-box" id="prompt-box" role="status" aria-live="polite">Spin for a prompt ✨</div>
+          </div>
+          <button class="btn btn-sage" id="prompt-btn" style="margin-top:16px;">Spin the spinner</button>
+        </div>
+
+        <div class="sticker game-card reveal">
+          <span class="big-emoji" aria-hidden="true">🔤</span>
+          <h2 class="script">Feel-Good Word Scramble</h2>
+          <p style="color:var(--ink-soft);">Unscramble the mystery word — every answer is something lovely.</p>
+          <div class="game-area">
+            <div class="scramble-word" id="scramble-word" aria-live="polite"></div>
+            <div>
+              <label for="scramble-input" style="position:absolute; left:-9999px;">Your guess</label>
+              <input class="scramble-input" id="scramble-input" type="text" autocomplete="off" placeholder="Type your guess…">
+            </div>
+            <p class="scramble-msg" id="scramble-msg" role="status" aria-live="polite"></p>
+            <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+              <button class="btn btn-honey btn-small" id="scramble-check">Check my answer</button>
+              <button class="btn btn-outline btn-small" id="scramble-new">New word</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFLINE IDEAS -->
+    <section class="section section-alt" aria-labelledby="g-offline">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="g-offline">Screen-free ideas 🌿</h2>
+          <p>Fancy something away from the screen? Try one of these.</p>
+        </div>
+        <div class="grid-3">
+          <div class="sticker tilt-l reveal">
+            <h3>🎨 Doodle your day</h3>
+            <p style="color:var(--ink-soft); font-size:0.95rem; margin-top:6px;">Draw your day as weather — sunshine, drizzle, storms or rainbows. No artistic skill required.</p>
+          </div>
+          <div class="sticker reveal">
+            <h3>🚶 The colour walk</h3>
+            <p style="color:var(--ink-soft); font-size:0.95rem; margin-top:6px;">Pick a colour, then go for a short walk and count how many times you spot it.</p>
+          </div>
+          <div class="sticker tilt-r reveal">
+            <h3>💌 A note to future you</h3>
+            <p style="color:var(--ink-soft); font-size:0.95rem; margin-top:6px;">Write one kind sentence to yourself and hide it somewhere you'll find it later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>The Wellbeing Hub</h4>
+          <p>Free wellbeing resources and activities created from a youth advocate's
+            professional standpoint. These materials are supportive tools, not medical
+            or therapeutic advice, and may not suit everyone.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Need help now?</h4>
+          <ul>
+            <li>Emergency <strong>999</strong></li>
+            <li>Childline <strong>0800 1111</strong></li>
+            <li>Samaritans <strong>116 123</strong></li>
+            <li>Text SHOUT to <strong>85258</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The Wellbeing Hub · Made with care for young people and those who support them.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

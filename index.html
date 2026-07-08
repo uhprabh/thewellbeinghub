@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wellbeing Hub — a toolkit for young people & youth advocates</title>
+  <meta name="description" content="Free wellbeing resources and fun interactive activities for young people aged 11–17, created by a youth advocate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">W</span>
+        <span class="logo-text">The Wellbeing Hub</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">Free for everyone 💛</span>
+        <h1>A cosy corner for<br>your wellbeing</h1>
+        <p class="lead">
+          Hello and welcome! This is a home for free wellbeing resources and fun little
+          activities, made for young people aged 11–17 and the youth advocates who
+          support them. Take your time, have a look around — this space is yours.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-honey" href="library.html">Browse the library</a>
+          <a class="btn btn-sage" href="games.html">Play a game</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- VISITOR CHOOSER -->
+    <section class="section" aria-labelledby="chooser-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="chooser-title">Who's visiting today?</h2>
+          <p>Pick the door that fits you best — both lead somewhere good.</p>
+        </div>
+        <div class="chooser">
+          <a class="sticker tilt-l chooser-card reveal" href="games.html">
+            <span class="big-emoji" aria-hidden="true">🧒</span>
+            <h3>I'm a young person</h3>
+            <p>Fun games, mood check-ins, breathing bubbles and little boosts of
+              encouragement — made just for you.</p>
+            <span class="btn btn-outline btn-small" aria-hidden="true">Take me to the games</span>
+          </a>
+          <a class="sticker tilt-r chooser-card reveal" href="library.html">
+            <span class="big-emoji" aria-hidden="true">🧑‍🏫</span>
+            <h3>I'm a professional or parent</h3>
+            <p>Free, editable session resources organised by theme — ready to
+              download and adapt for every young person you support.</p>
+            <span class="btn btn-outline btn-small" aria-hidden="true">Take me to the library</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK MOOD CHECK-IN -->
+    <section class="section section-alt reveal" aria-labelledby="mood-title">
+      <div class="container" style="text-align:center;">
+        <h2 id="mood-title">How are you doing today?</h2>
+        <p style="color:var(--ink-soft); max-width:520px; margin:8px auto 0;">
+          Tap the face that feels most like you right now. No wrong answers —
+          every feeling is allowed here.
+        </p>
+        <div class="mood-row" role="group" aria-label="Choose how you are feeling">
+          <button class="mood-btn" data-mood="great" aria-label="I feel great">😄</button>
+          <button class="mood-btn" data-mood="good" aria-label="I feel good">🙂</button>
+          <button class="mood-btn" data-mood="okay" aria-label="I feel okay">😐</button>
+          <button class="mood-btn" data-mood="low" aria-label="I feel a bit low">😔</button>
+          <button class="mood-btn" data-mood="tough" aria-label="I'm having a tough time">😢</button>
+        </div>
+        <div class="mood-response" id="mood-response" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section class="section" aria-labelledby="inside-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="inside-title">What's inside the hub?</h2>
+        </div>
+        <div class="grid-3">
+          <div class="sticker tilt-l reveal">
+            <h3>📚 The Library</h3>
+            <p style="color:var(--ink-soft); font-size:0.96rem; margin-top:8px;">
+              Worksheets and activities across ten themes — from anxiety and anger
+              to friendships and resilience. Preview them online or download to edit.
+            </p>
+          </div>
+          <div class="sticker reveal">
+            <h3>🎈 The Games Corner</h3>
+            <p style="color:var(--ink-soft); font-size:0.96rem; margin-top:8px;">
+              Quick, calming, in-the-moment activities: breathing bubbles, mood
+              check-ins, kind-word scrambles and journal prompts. Nothing is saved
+              or tracked — just play.
+            </p>
+          </div>
+          <div class="sticker tilt-r reveal">
+            <h3>💌 Get in touch</h3>
+            <p style="color:var(--ink-soft); font-size:0.96rem; margin-top:8px;">
+              Got a question, a suggestion, or a resource you'd love to see added?
+              There's a friendly form waiting for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>The Wellbeing Hub</h4>
+          <p>Free wellbeing resources and activities created from a youth advocate's
+            professional standpoint. These materials are supportive tools, not medical
+            or therapeutic advice, and may not suit everyone.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Need help now?</h4>
+          <ul>
+            <li>Emergency <strong>999</strong></li>
+            <li>Childline <strong>0800 1111</strong></li>
+            <li>Samaritans <strong>116 123</strong></li>
+            <li>Text SHOUT to <strong>85258</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The Wellbeing Hub · Made with care for young people and those who support them.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
